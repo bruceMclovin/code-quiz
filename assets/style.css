@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary: #44e9ff;
+    --secondary: #497980;
+    --tertiary: rgb(192, 246, 253);
+    font-size: 62.5%;
+  }
+
+  body {
+    background: #504747;
+    color: var(--grey);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+  }
+
+  header {
+    background: var(--secondary);
+    padding: 30px 25px;
+    border-bottom: 5px solid var(--primary);
+  }
+  
+  header p {
+    color: var(--tertiary);
+    margin: 5px 0 20px;
+    font-size: 2rem;
+  }
+
+  .questionStyle{
+    color: rgb(221, 247, 255);;
+    font-size: 5rem;
+    font-family:'Times New Roman', Times, serif;
+  }
+
+
+
+  p{
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  font-size: 2.2rem;
+  border: 2px solid var(--grey);
+  border-radius: 12px;
+}
+
+form .score-group {
+  margin: 10px 6px 10px 0;
+  flex: 1;
+}
+
+.clock{
+  display: inline-block;
+  font-size: 3rem;
+  color: rgb(102, 24, 98);
+  padding-right: 10%;
+  width: 100%;
+  max-width: 100%;
+  margin:0;
+  vertical-align:top;
+  text-align: right;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: var(--primary);
+  font-size: 2.2rem;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px var(--grey);
+}
+.btn:hover {
+  box-shadow: 0 2px var(--grey);
+  top: -2px;
+}
+.btn:active {
+  box-shadow: 0 0px var(--grey);
+  top: 0;
+}
+
+.page-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  text-align: center;
+}
+.score {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#user-score {
+  color: #EF9614;
+}
+.options{
+  padding: 50px;
+}
+
+.hide {
+  display: none;
+}
+  
+@media only screen and (max-width: 875px) {
+    
+  header {
+      font-size: 20px;
+  }
+}
