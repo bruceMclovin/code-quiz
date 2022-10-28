@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code-quiz</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+
+
+
+<body>
+  <header>
+    <h1 class="page-title">Code Quiz</h1>
+    <p>Enter your initials to begin!</p>
+    <form id="score-initials">
+      <div class="score-group">
+        <input type="text" name="score-name" placeholder="Enter initials" />
+      </div>
+      <div class="score-group">
+        <button class="btn" id="save-initials" btn="submit">Start!</button>
+      </div>
+    </form>
+    <div class="clock">
+      Time left: <span id="clock">60</span>
+    </div>
+  </header>
+
+  <main class="page-content" id="page-content">
+    <section class="quizArea">
+      <div class="score">
+          <span id="user-score">0</span>
+      </div>
+      <div class="content hide" id="question-area">
+          <div id="question-text">
+            <h1 id="question-text" class="questionStyle"> questions go here</h2>
+          </div>
+          <div class="options">
+              <button class="btn btn-option" id="True">True</button>
+              <button class="btn btn-option" id="False">False</button>
+              <button class="btn btn-option" id="False">False</button>
+          </div>
+      </div>
+    </section>
+
+    <section class="startPage">
+      <h1 class="questionStyle"> ENTER YOUR INITIALS TO BEGIN </h1>
+    </section>
+
+    <section class="endPage hide">
+      <h2 class="scoreTitle" id="user-score">YOU SCORED 7</h2>
+      <ol id="hiScoreData">
+      </ol>
+        <div>
+          <btn class="btn restart" id="restartBtn"> Try Again? </btn>
+        </div>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
